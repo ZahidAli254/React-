@@ -1,6 +1,4 @@
 import ExpenseItem from "./component/ExpenseItem";
-
-
 function App() {
   const expenses = [
     {
@@ -32,21 +30,17 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-  
-  
-
-  return (
+   return (
     <div>
       <h2>Let's get started!</h2>
       {
         expenses.map((items)=> <ExpenseItem Data={items}></ExpenseItem>)
       }
-   
-      {/* <ExpenseItem title={expenses[0].title} Location={expenses[0].LocationOfExpenditure} amount={expenses[0].amount} date={expenses[0].date}></ExpenseItem>
+    {/* <ExpenseItem title={expenses[0].title} Location={expenses[0].LocationOfExpenditure} amount={expenses[0].amount} date={expenses[0].date}></ExpenseItem>
       <ExpenseItem title={expenses[1].title} Location={expenses[1].LocationOfExpenditure} amount={expenses[1].amount} date={expenses[1].date}></ExpenseItem>
       <ExpenseItem title={expenses[2].title} Location={expenses[2].LocationOfExpenditure} amount={expenses[2].amount} date={expenses[2].date}></ExpenseItem>
-      <ExpenseItem title={expenses[3].title} Location={expenses[3].LocationOfExpenditure} amount={expenses[3].amount} date={expenses[3].date}></ExpenseItem> */}
-    </div>
+      <ExpenseItem title={expenses[3].title} Location={expenses[3].LocationOfExpenditure} amount={expenses[3].amount} date={expenses[3].date}></ExpenseItem>  */}
+    </div> 
   );
 }
 
