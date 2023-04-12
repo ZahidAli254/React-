@@ -27,7 +27,7 @@ function App() {
     {
       id: 'e4',
       title: 'New Desk (Wooden)',
-      LocationOfExpenditure: 'aligarh',
+      LocationOfExpenditure: 'aliganj',
       amount: 450,
       date: new Date(2021, 5, 12),
     },
@@ -39,7 +39,7 @@ function App() {
     <div>
       <h2>Let's get started!</h2>
       {
-        expenses.map((items)=> <ExpenseItem data={items}></ExpenseItem>)
+        expenses.map((items)=> <ExpenseItem Data={items}></ExpenseItem>)
       }
    
       {/* <ExpenseItem title={expenses[0].title} Location={expenses[0].LocationOfExpenditure} amount={expenses[0].amount} date={expenses[0].date}></ExpenseItem>
